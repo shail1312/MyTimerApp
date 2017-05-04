@@ -10,6 +10,7 @@ describe('CountdownForm', () => {
   it('should exist', => {
     expect(CountdownForm).toExist();
   });
+
   it('should call onSetCountdown if valid seconds entered', () => {
     var spy = expect.createSpy();
     var CountdownForm = TestUtils.renderIntoDocument(<CountdownForm onSetCountdown={spy}/>);
